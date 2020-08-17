@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	th {
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+
+	td {
+		
+		padding: 10px;
+	}
+
+	button {
+		border: none;
+		background-color: #FFFFFF;
+	}
+
+	.footer {
+		margin: 70px 0 0 0;
+		width: 100vw;
+		display: block;
+		overflow: hidden;
+		padding: 20px 0;
+		box-sizing: border-box;
+		background-color: #18181a;
+	}
+
+	.inner_footer {
+		display: block;
+		margin: 0 auto;
+		width: 1100px;
+		height: 100%;
+	}
+
+	.inner_footer .inner_third {
+		width: calc(21.666666667% - 20px);
+		margin-right: 10px;
+		float: left;
+		height: 100%;
+	}
+
+	.inner_footer .inner_third: last-child {
+		margin-right: 0;
+		float: right;
+	}
+
+	.inner_footer .inner_third h1{
+		font-family: 'arial';
+		font-size: 20px;
+		color: white;
+		display: block;
+		width:  100%;
+		margin-bottom: 20px;
+	}
+
+	.inner_footer .inner_third p{
+		font-family: 'arial';
+		font-size: 14px;
+		color: white;
+		display: block;
+		width:  100%;
+		margin-bottom: 20px;
+	}
+
+</style>
+<TITLE> Product Selection</TITLE>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	 <script src="script.js"></script>
+	<div class="jumbotron text-center" style="background-color: #18181a">
+		<h1><font color = "white" face = "Bombing">Online Mart</font></h1>
+	</div>
+	<div class = "container" >
+		<h2>Item List</h2>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Product Name</th>
+					<th>Price</th>
+					<th><button onclick="uncheckAll()"> Clear</button></th>
+				</tr>
+			</thead>
+			<tbody><form action="Page2.html">
+				<tr>
+					<td>Samsung Galaxy Note 20</td>
+					<td>$999</td>
+					<td><input type="checkbox" class="checks" id = "1" name="cart"></td>
+				</tr>
+				<tr>
+					<td>Google - Pixel 3a with 64GB</td>
+					<td>$399</td>
+					<td><input type="checkbox" class="checks"  id = "2" name="cart"></td>
+				</tr>
+				<tr>
+					<td>Motorola Moto G8 Power Lite 64GB</td>
+					<td>$119.99</td>
+					<td><input type="checkbox" class="checks"  id = "3" name="cart"></td>
+				</tr>
+				<tr>
+					<td>Seagate Portable 2TB External Hard Drive Portable HDD</td>
+					<td>$62.49</td>
+					<td><input type="checkbox" class="checks"  id = "4" name="cart"></td>
+				</tr>
+				<tr>
+					<td>AMD Ryzen 7 3700X</td>
+					<td>$283.55</td>
+					<td><input type="checkbox" class="checks"  id = "5" name="cart"></td>
+				</tr>
+				<tr>
+					<td>High-Speed HDMI Cable, 6 Feet</td>
+					<td>$6.99</td>
+					<td><input type="checkbox" class="checks"  id = "6" name="cart"></td>
+				</tr>
+				<tr>
+					<td>Logitech C920 Hd Pro Webcam (Black)</td>
+					<td>$164.99</td>
+					<td><input type="checkbox" class="checks"  id = "7" name="cart"></td>
+				</tr>
+				<tr>
+					<td>Fitbit Versa 2 Health and Fitness Smartwatch</td>
+					<td>$198.95</td>
+					<td><input type="checkbox" class="checks"  id = "8" name="cart"></td>
+				</tr>
+				<tr>
+					<td>Acer SB220Q bi 21.5 Inches Full HD (1920 x 1080) IPS</td>
+					<td>$89.99</td>
+					<td><input type="checkbox" class="checks"  id = "9" name="cart"></td>
+				</tr>
+				<tr>
+					<td>TP-Link 5 Port Gigabit Ethernet Network Switch (TL-SG105)</td>
+					<td>$16.99</td>
+					<td><input type="checkbox" class="checks"  id = "0" name="cart"></td>
+				</tr>
+			</tbody>
+		</table>
+		<input type="submit" onclick="getValue();" class="btn btn-success" value="Next">
+		</form>
+	</div>
+	<div class="footer">
+		<div class="inner_footer">
+			<div class="inner_third">
+				<h1>Summary</h1>
+				<p>Online mart is a 2 page website, part of an assignment submitted by Achyut Saxena(RA1711003010834)</p>		
+			</div>
+			<div class="inner_third text-right" style="color: #18181a;"><</div>
+			<div class="inner_third text-right" style="color: #18181a;"><</div>
+			<div class="inner_third text-right">
+				<h1>Contact</h1>
+				<p>achyutsaxena03@gmail.com</p>
+			</div>
+			
+		</div>
+		
+	</div>
+</body>
+</html>
